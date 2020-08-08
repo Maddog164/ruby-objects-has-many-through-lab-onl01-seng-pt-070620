@@ -33,8 +33,11 @@ class Doctor
   #  end
   #end
 
-  #def genres
-  #  songs.map do |song|
+  def patients
+    appointments.map do |appointment|
+      appointment.patient
+    end
+  end
   #    song.genre
   #  end
   #end
