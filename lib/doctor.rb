@@ -20,6 +20,12 @@ class Doctor
 
   end
 
+  def appointments
+    Appointments.all.select do |appointment|
+      appointment.doctor == self
+    end
+  end
+
   #def songs
   #  Song.all.select do |song|
   #    song.artist == self
