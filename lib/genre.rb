@@ -19,18 +19,16 @@ class Genre
     end
   end
 
-  def artists
-    Artist.all.select do |artist|
-      artist.genre == self
-    end
-  end
+  #def artists
+  #  Artist.all.select do |artist|
+  #    artist.genre == self
+  #  end
+  #end
 
   def artists
     songs.map do |song|
       song.artist
     end
   end
-
-
 
 end
