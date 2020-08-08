@@ -1,4 +1,4 @@
-class Patient 
+class Patient
 
   attr_accessor :name, :appointment, :doctor
 
@@ -11,7 +11,7 @@ class Patient
 
   def self.all
     @@all
-  end 
+  end
 
 
 end
